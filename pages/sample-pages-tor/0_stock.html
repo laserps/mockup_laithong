@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inspire - Bootstrap Admin Dashboard Template</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width">
+  <!-- Bootstrap core CSS     -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--  Paper Dashboard CSS    -->
+  <link href="../../assets/css/inspire.css" rel="stylesheet">
+  <!--  CSS for Demo Purpose, don't include it in your project     -->
+  <link href="../../assets/css/demo.css" rel="stylesheet">
+  <!--     Fonts and icons     -->
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+  <link href="./mui.css" rel="stylesheet"> </head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column">
+          <li class="d-flex flex-column active">
+            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
+              <p>ระบบหลักโรงงาน
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
+                <li class="active">
+                  <a class="nav-link" href="0_stock.html">รายการสินค้า(Stock รวม)</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="0_stock_add_or_madify_frame.html">เพิ่ม / แก้ไข สินค้าประเภทกรอบ</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="0_stock_add_or_madify_frame_v2.html">เพิ่ม / แก้ไข สินค้าประเภทกรอบ v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="0_stock_add_or_madify_bearings.html">เพิ่ม / แก้ไข สินค้าประเภทตลับ</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="0_stock_add_or_madify_bearings_v2.html">เพิ่ม / แก้ไข สินค้าประเภทตลับ v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="0_stock_add_or_madify_ accessory.html">เพิ่ม / แก้ไข สินค้าประเภทอุปกรณ์</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="0_stock_add_or_madify_ accessory_v2.html">เพิ่ม / แก้ไข สินค้าประเภทอุปกรณ์ v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="1_Delivery.html">ส่งของ</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="1_Delivery_report.html">ประวัติการส่งของ</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables1" class="nav-link collapsed" aria-expanded="false">
+              <p>ระบบหลักสาขา (Pos)
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables1" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
+                <li>
+                  <a class="nav-link" href="7_Pos_sell.html">ขายสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="7_Pos_buy.html">ซื้อสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="7_Pos_turn.html">เทิร์นสินค้า</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="2_stock_Branch.html">คลังสินค้าสาขา</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables2" class="nav-link collapsed" aria-expanded="false">
+              <p>ระบบจัดการกรอบ
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables2" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
+                <li>
+                  <a class="nav-link" href="3_frame.html">จัดการกรอบ</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="3_frame_v2.html">จัดการกรอบ v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="3_frame_report.html">รายงานจัดการกรอบ</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables3" class="nav-link collapsed" aria-expanded="false">
+              <p>ระบบจัดการตลับ
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables3" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
+                <li>
+                  <a class="nav-link" href="3_bearings.html">จัดการตลับ</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="3_bearings_v2.html">จัดการตลับ v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="3_bearings_report.html">รายงานจัดการตลับ</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables4" class="nav-link collapsed" aria-expanded="false">
+              <p>ระบบจัดการอุปกรณ์และค่าแรง
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables4" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
+                <li>
+                  <a class="nav-link" href="4_accessory_and_ wage.html">จัดการอุปกรณ์และค่าแรง</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_accessory_and_ wage_v2.html">จัดการอุปกรณ์และค่าแรง v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="4_accessory_and_ wage_report.html">รายงานจัดการอุปกรณ์และค่าแรง</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="#tables5" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+              <p>ระบบจัดการข้อมูลพื้นฐาน
+                <i class="fa fa-sort-desc submenu-toggle"></i>
+              </p>
+            </a>
+            <div class="collapse" id="tables5" role="navigation" aria-expanded="false" style="">
+              <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
+                <li>
+                  <a class="nav-link" href="5_Basic_data.html">ข้อมูลพื้นฐาน</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="5_Basic_data_v2.html">ข้อมูลพื้นฐาน v2</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="5_Basic_data_report.html">รายงานข้อมูลพื้นฐาน</a>
+                </li>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
+                  <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                  <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="6_Report.html">
+              <i class="nav-icon"></i>
+              <p>รายงาน</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">รายการสินค้า(Stock รวม)</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
+              </div>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!--
+              <div class="card">
+                <div class="card-body p-2">
+-->
+              <form class="form">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body p-2">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <label class="p-2">วันที่ทำ Stock</label>
+                          </div>
+                          <div class="col-md-1">
+                            <input type="date" name="bday" class="form-control"> </div>
+                          <div class="col-md-">
+                            <label class="p-2">ถึง</label>
+                          </div>
+                          <div class="col-md-1">
+                            <input type="date" name="bday" class="form-control"> </div>
+                          <div class="col-md-1">
+                            <label class="p-2">ประเภทสินค้า</label>
+                          </div>
+                          <div class="col-md-1 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>กรอบ 90</label>
+                          </div>
+                          <div class="col-md-1 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>กรอบ 75</label>
+                          </div>
+                          <div class="col-md-1 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>กรอบ 70</label>
+                          </div>
+                          <div class="col-md-1 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>ตลับ</label>
+                          </div>
+                          <div class="col-md-1 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>เลือกทั้งหมด</label>
+                          </div>
+                          <div class="col-md-1">
+                            <label class="p-2">พิมพ์กรอบ</label>
+                          </div>
+                          <div class="col-md-1">
+                            <select class="form-control">
+                              <option value="0">แบบพิมพ์กรอบทั้งหมด</option>
+                              <option value="1@PT">PT พิมพ์พระปิดตา</option>
+                              <option value="2@PO">PO หยดน้ำ </option>
+                              <option value="3@PR">PR พิมพ์ปรก</option>
+                              <option value="4@CC">CC พิมพ์กลม</option>
+                              <option value="5@EG">EG พิมพ์ไข่</option>
+                              <option value="6@SQ">SQ พิมพ์สี่เหลี่ยม/ห้าเหลี่ยม</option>
+                              <option value="7@SM">SM พิมพ์เสมา</option>
+                              <option value="8@LO">LO พิมพ์รูปหล่อ</option>
+                              <option value="35@OR">OR งานสั่ง</option>
+                              <option value="36@AC">AC อุปกรณ์</option>
+                              <option value="39@PC">PC พิมพ์พระชัย</option>
+                              <option value="40@TG">TG พิมพ์สามเหลี่ยม</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body p-2">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <button class="btn btn-outline-secondary" type="button">+ เพิ่มข้อมูล</button>
+                          </div>
+                          <div class="col-md-5"> </div>
+                          <div class="col-md-1">
+                            <label class="p-2">ค้นหาสินค้า</label>
+                          </div>
+                          <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="Keyword"> </div>
+                          <div class="col-md-2">
+                            <select class="form-control">
+                              <option value="barcode_product">รหัส Barcode</option>
+                              <option value="code_product">รหัสสินค้า.</option>
+                              <option value="id_category">รหัสพิมพ์กรอบ.</option>
+                              <option value="description">รหัสรูปแบบ.</option>
+                              <option value="date_product">วัันที่ทำ Stock.</option>
+                              <option value="weight_product">น้ำหนัก</option>
+                              <option value="size_product">ราคาทอง.</option>
+                            </select>
+                          </div>
+                          <div class="col-md-1">
+                            <button class="btn btn-outline-secondary" type="button">ค้นหา</button>
+                          </div>
+                        </div>
+                        <table class="table table-hover table table-striped">
+                          <thead>
+                            <tr>
+                              <th>ลำดับ</th>
+                              <th>รหัสสินค้า</th>
+                              <th>Barcode</th>
+                              <th>พิมพ์</th>
+                              <th>รูปภาพ</th>
+                              <th>รูปแบบ</th>
+                              <th>ขนาด</th>
+                              <th>รูปแบบ</th>
+                              <th>ลงยา</th>
+                              <th>แผ่นปิดหลัง</th>
+                              <th>ซุ้ม</th>
+                              <th>ฝังเพชร</th>
+                              <th>น้ำหนัก รวมซิ</th>
+                              <th>เครื่องมือ</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>D-AC-0173771 ผ่าหวายทอง งาน 70%</td>
+                              <td>1091117014331</td>
+                              <td>อุปกรณ์</td>
+                              <td></td>
+                              <td></td>
+                              <td>S</td>
+                              <td>ผ่าหวาย 70 เบอร์3 .0</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>1.61</td>
+                              <td>
+                                <button class="btn btn-secondary btn-xs">
+                                  <i class="fa fa-print"></i>
+                                </button>
+                                <button class="btn btn-warning btn-xs">
+                                  <i class="fa fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                  <i class="fa fa-trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>B-SQ-43-0169002</td>
+                              <td>1050917110124</td>
+                              <td>พิมพ์สี่เหลี่ยม/ห้าเหลี่ยม</td>
+                              <td></td>
+                              <td></td>
+                              <td>M</td>
+                              <td>แกะลาย</td>
+                              <td>ฉพาะซุ้ม</td>
+                              <td>เปิดหลัง</td>
+                              <td>ยกซุ้ม</td>
+                              <td>ไม่ฝังเพชร</td>
+                              <td>12.09</td>
+                              <td>
+                                <button class="btn btn-secondary btn-xs">
+                                  <i class="fa fa-print"></i>
+                                </button>
+                                <button class="btn btn-warning btn-xs">
+                                  <i class="fa fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                  <i class="fa fa-trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>D-AC--0167686 ลุกขุน/แค๊ปซูลทั้งหมด</td>
+                              <td>1230817102836</td>
+                              <td>อุปกรณ์</td>
+                              <td></td>
+                              <td></td>
+                              <td>S</td>
+                              <td>แค๊ปซูลไม่มีห่วงใหญ่</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>2.78</td>
+                              <td>
+                                <button class="btn btn-secondary btn-xs">
+                                  <i class="fa fa-print"></i>
+                                </button>
+                                <button class="btn btn-warning btn-xs">
+                                  <i class="fa fa-edit"></i>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                  <i class="fa fa-trash"></i>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--
+                </div>   
+              </div>
+-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="../../assets/vendors/jquery.validate.min.js"></script>
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="../../assets/vendors/moment.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="../../assets/vendors/chartist.min.js"></script>
+  <!--  Plugin for the Wizard -->
+  <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../../assets/vendors/bootstrap-notify.js"></script>
+  <!-- DateTimePicker Plugin -->
+  <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
+  <!-- Vector Map plugin -->
+  <script src="../../assets/vendors/jquery-jvectormap.js"></script>
+  <!-- Sliders Plugin -->
+  <script src="../../assets/vendors/nouislider.min.js"></script>
+  <!-- Select Plugin -->
+  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+  <!--  DataTables.net Plugin    -->
+  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+  <!-- Sweet Alert 2 plugin -->
+  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin    -->
+  <script src="../../assets/vendors/fullcalendar.min.js"></script>
+  <!-- TagsInput Plugin -->
+  <script src="../../assets/vendors/jquery.tagsinput.js"></script>
+  <!-- Material Dashboard javascript methods -->
+  <script src="../../assets/js/inspire.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
