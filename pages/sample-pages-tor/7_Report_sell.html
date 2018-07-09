@@ -91,7 +91,7 @@
               </ul>
             </div>
           </li>
-          <li class="d-flex flex-column">
+          <li class="d-flex flex-column active">
             <a href="#tables1" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
               <i class="nav-icon ti-money"></i>
               <p>ระบบหลักสาขา (Pos)
@@ -115,7 +115,7 @@
                 <li>
                   <a class="nav-link" href="7_Report_order.html">รายงานการสั่งซื้อ</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="nav-link" href="7_Report_sell.html">รายงานการขาย</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
@@ -217,8 +217,8 @@
               </ul>
             </div>
           </li>
-          <li class="d-flex flex-column active">
-            <a data-toggle="collapse" href="#tables4" class="nav-link collapsed" aria-expanded="false">
+          <li class="d-flex flex-column">
+            <a href="#tables4" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
               <i class="nav-icon ti-package"></i>
               <p>ระบบจัดการอุปกรณ์และค่าแรง
                 <i class="fa fa-sort-desc submenu-toggle"></i>
@@ -226,7 +226,7 @@
             </a>
             <div class="collapse" id="tables4" role="navigation" aria-expanded="false" style="">
               <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="d2aba7ea-d2ae-4782-67ac-9ea73e388f5e">
-                <li class="active">
+                <li>
                   <a class="nav-link" href="4_accessory_and_ wage.html">จัดการอุปกรณ์และค่าแรง</a>
                 </li>
                 <li>
@@ -351,7 +351,8 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">อุปกรณ์และค่าแรง</a>
+          <a class="navbar-brand" href="#">รายงานการขาย
+            <br> </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -404,68 +405,58 @@
 -->
               <form class="form">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2">ประเภทอุปกรณ์</label>
-                          </div>
                           <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2">ชื่ออุปกรณ์</label>
+                            <h5 class="p-2">รายงานการขาย</h5>
                           </div>
-                          <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2">ประเภท</label>
-                          </div>
-                          <div class="col-md-6">
-                            <select class="form-control">
-                              <option value="เลือก">เลือก</option>
-                              <option value="อุปกรณ์">อุปกรณ์</option>
-                            </select>
+                          <div class="col-md-3">
+                            <input type="date" name="bday" class="form-control"> </div>
+                          <div class="col-md-3 form-inline">
+                            <input type="text" class="form-control" placeholder="ค้นหา">
+                            <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2">ค่าแรงตั้งต้นในเครือ</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2">ค่าแรงตั้งต้นนอกเครือ</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2" contenteditable="true">เปอร์เซ็นอุปกรณ์</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-3 text-right">
-                            <label class="p-2">ค่าซิอุปกรณ์</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
+                        <table class="table table-hover table table-striped">
+                          <thead>
+                            <tr>
+                              <th>ลำดับ</th>
+                              <th>วันที่</th>
+                              <th>รหัสสินค้า</th>
+                              <th>รายการ</th>
+                              <th>จำนวน</th>
+                              <th>ราคา</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>12/12/2561</td>
+                              <td>XXXX</td>
+                              <td>AAA</td>
+                              <td>20</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>12/12/2561</td>
+                              <td>YYYY</td>
+                              <td>CCC</td>
+                              <td>10</td>
+                              <td>200</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>12/12/2561</td>
+                              <td>ZZZZ</td>
+                              <td>VVV</td>
+                              <td>25</td>
+                              <td>50</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
