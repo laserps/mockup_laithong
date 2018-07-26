@@ -34,8 +34,8 @@
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav flex-column">
-          <li class="d-flex flex-column active">
-            <a href="#tables" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+          <li class="d-flex flex-column">
+            <a data-toggle="collapse" href="#tables" class="nav-link collapsed" aria-expanded="false">
               <i class="nav-icon ti-home"></i>
               <p>ระบบหลักโรงงาน
                 <i class="fa fa-sort-desc submenu-toggle"></i>
@@ -58,7 +58,7 @@
                 <li>
                   <a class="nav-link" href="0_stock_add_or_madify_bearings_v2.html">เพิ่ม / แก้ไข สินค้าประเภทตลับ v2</a>
                 </li>
-                <li class="active">
+                <li>
                   <a class="nav-link" href="0_stock_add_or_madify_ accessory.html">เพิ่ม / แก้ไข สินค้าประเภทอุปกรณ์</a>
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               </ul>
             </div>
           </li>
-          <li class="d-flex flex-column ">
+          <li class="d-flex flex-column active">
             <a data-toggle="collapse" href="#tables1" class="nav-link collapsed" aria-expanded="false">
               <i class="nav-icon ti-money"></i>
               <p>ระบบหลักสาขา (Pos)
@@ -112,7 +112,7 @@
                 <li>
                   <a class="nav-link" href="7_Pos_add_or_madify_frame_v2.html">สั่งสินค้าประเภทกรอบ</a>
                 </li>
-                <li>
+                <li class="active">
                   <a class="nav-link" href="7_Pos_add_or_madify_bearings_v2.html">สั่งสินค้าประเภทตลับ</a>
                 </li>
                 <li>
@@ -360,7 +360,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">เพิ่ม / แก้ไข สินค้าประเภทอุปกรณ์</a>
+          <a class="navbar-brand" href="#">สั่งสินค้าประเภทตลับ</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -413,12 +413,12 @@
 -->
               <form class="form">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
                           <div class="col-md-3 text-right">
-                            <label class="p-2 ">รหัสสินค้า</label>
+                            <label class="p-2">รหัสสินค้า</label>
                           </div>
                           <div class="col-md-6">
                             <label class="p-2">---0153040</label>
@@ -439,28 +439,30 @@
                           </div>
                           <div class="col-md-6">
                             <select class="form-control">
-                              <option>กรอบ 90</option>
-                              <option>กรอบ 75</option>
-                              <option>กรอบ 70 </option>
-                              <option>ตลับ</option>
-                              <option>อุปกรณ์</option>
+                              <option value="กรอบ 90">กรอบ 90</option>
+                              <option value="กรอบ 75">กรอบ 75</option>
+                              <option value="กรอบ 70">กรอบ 70 </option>
+                              <option value="ตลับ">ตลับ</option>
+                              <option value="อุปกรณ์">อุปกรณ์</option>
                             </select>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-3 text-right">
-                            <label class="p-2">ประเภทย่อย</label>
+                            <label class="p-2">ซุ้ม</label>
                           </div>
-                          <div class="col-md-6">
-                            <select class="form-control">
-                              <option>เลือก</option>
-                              <option>อุปกรณ์</option>
-                            </select>
+                          <div class="col-md-3 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>ยกซุ้ม</label>
+                          </div>
+                          <div class="col-md-3 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>ไม่ซุ้ม</label>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-3 text-right">
-                            <label class="p-2">รูปแบบ</label>
+                            <label class="p-2">แบบพิมพ์</label>
                           </div>
                           <div class="col-md-6">
                             <select class="form-control">
@@ -483,22 +485,150 @@
                         </div>
                         <div class="row">
                           <div class="col-md-3 text-right">
+                            <label class="p-2">เบอร์พิมพ์</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control">
+                              <option value="เลือกเบอร์">เลือกเบอร์</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
                             <label class="p-2">ขนาด</label>
                           </div>
                           <div class="col-md-6">
                             <select class="form-control">
-                              <option>S</option>
-                              <option>M</option>
-                              <option>L</option>
+                              <option value="S">S</option>
+                              <option value="M">M</option>
+                              <option value="L">L</option>
                             </select>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body p-2">
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">ฝังเพชร</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control">
+                              <option value="ฝัง">ฝัง</option>
+                              <option value="ไม่ฝัง">ไม่ฝัง</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">ราคาเพชร</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2" contenteditable="true">ราคาเพชรเม็ดที่ 1</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2" contenteditable="true">ราคาเพชรเม็ดที่ 2</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2" contenteditable="true">ราคาเพชรเม็ดที่ 3</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">ราคาเพชรเม็ดที่ 4</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2" contenteditable="true">ราคาเพชรเม็ดที่ 5</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">ค่าแรง</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">เพชรเม็ด(กะรัต)</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">กะรัต(บาท)</label>
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">แผ่น</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control">
+                              <option value="ปิดหลัง">ปิดหลัง</option>
+                              <option value="เปิดหลัง">เปิดหลัง</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">รูปแบบแผ่น</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control">
+                              <option value="ไม่มี">ไม่มี</option>
+                              <option value="เฉพาะซุ้ม">เฉพาะซุ้ม</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">ลงยา</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control">
+                              <option value="ไม่มี">ไม่มี</option>
+                              <option value="เฉพาะซุ้ม">เฉพาะซุ้ม</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">ลักษณะพิเศษ</label>
+                          </div>
+                          <div class="col-md-2 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>ลักษณะพิเศษ 1</label>
+                          </div>
+                          <div class="col-md-2 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>ลักษณะพิเศษ 2</label>
+                          </div>
+                          <div class="col-md-2 p-2">
+                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                            <label>ลักษณะพิเศษ 3</label>
+                          </div>
+                        </div>
                         <div class="row">
                           <div class="col-md-3 text-right">
                             <label class="p-2">ค่าแรงพิเศษ</label>
@@ -542,54 +672,32 @@
                           <div class="col-md-6">
                             <input type="text" class="form-control"> </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body p-2">
                         <div class="row">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-3 text-right">
-                                <label class="p-2">รูปภาพ</label>
-                              </div>
-                              <div class="col-md-6">
-                                <input type="file" class="form-control"> </div>
-                            </div>
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">รูปภาพ</label>
                           </div>
                           <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-md-3 text-right">
-                                <label class="p-2">คลังสินค้า</label>
-                              </div>
-                              <div class="col-md-6">
-                                <select class="form-control">
-                                  <option value="เลือก">เลือก</option>
-                                </select>
-                              </div>
-                            </div>
+                            <input type="file" class="form-control"> </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 text-right">
+                            <label class="p-2">คลังสินค้า</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="form-control">
+                              <option value="เลือก">เลือก</option>
+                            </select>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body p-2">
                         <div class="row">
-                          <div class="col-md-1">
+                          <div class="col-md-3 text-right">
                             <label class="p-2">หมายเหตุ</label>
                           </div>
-                          <div class="col-md-10">
+                          <div class="col-md-6">
                             <input type="text" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-10"> </div>
+                          <div class="col-md-8"> </div>
                           <div class="col-md-1">
                             <button class="btn btn-outline-primary form-control"> บันทึก </button>
                           </div>
